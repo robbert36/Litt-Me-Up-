@@ -1,8 +1,7 @@
-package com.example.litmeup;
+package com.robbert36.littmeup;
 
 import android.app.Activity;
 import android.content.Context;
-import android.view.View;
 import android.widget.ImageView;
 
 public class StateMachine {

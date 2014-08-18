@@ -1,4 +1,4 @@
-package com.example.litmeup;
+package com.robbert36.littmeup;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -12,28 +12,28 @@ import android.widget.ImageView;
 public class MainActivity extends ActionBarActivity {
 
 	private StateMachine stateMachine;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		stateMachine = new StateMachine(this);
 
-        setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main);
 
-        ImageView imageview = (ImageView) findViewById(R.id.lit_image);
+		ImageView imageview = (ImageView) findViewById(R.id.lit_image);
 		imageview.setImageResource(R.drawable.unlit);
-		
+
 		ImageButton button = (ImageButton) findViewById(R.id.power_button);
 		button.setImageResource(R.drawable.power_button);
 		button.setOnClickListener(new OnClickListener() {
-						
+
 			@Override
 			public void onClick(View v) {
 				System.out.println("Click");
 				stateMachine.toggleState();
 			}
-		});		
+		});
 	}
 
 	@Override

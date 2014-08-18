@@ -1,4 +1,4 @@
-package com.example.litmeup;
+package com.robbert36.littmeup;
 
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -6,9 +6,9 @@ import android.widget.TextView;
 public class LitState implements State {
 	private int mImageRecourse = R.drawable.lit_up;
 	private String mText = "You just got litt up!!!";
-	
+
 	public LitState() {
-		
+
 	}
 
 	@Override

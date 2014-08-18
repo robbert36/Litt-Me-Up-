@@ -1,4 +1,4 @@
-package com.example.litmeup;
+package com.robbert36.littmeup;
 
 import android.widget.ImageView;
 import android.widget.TextView;
